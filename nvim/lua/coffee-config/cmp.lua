@@ -84,13 +84,16 @@ lspkind.init()
     --   capabilities = capabilities
     -- }
 
-require("lspconfig").sumneko_lua.setup {
+require("lspconfig")["sumneko_lua"].setup {
     capabilities = capabilities
 }
 
-require("lspconfig").clangd.setup {
+require("lspconfig")["clangd"].setup {
     capabilities = capabilities
 }
 
+require("lspconfig")['rust_analyzer'].setup {
+    capabilities = capabilities
+}
 
 

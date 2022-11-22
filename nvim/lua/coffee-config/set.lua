@@ -15,3 +15,6 @@ vim.opt.incsearch = true
 vim.opt.wrap = false
 
 vim.opt.colorcolumn = "80"
+
+-- Include Highlighting for TODO, BUG, FIX, etc
+require("todo-comments").setup{}
